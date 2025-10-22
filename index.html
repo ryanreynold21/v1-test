@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./src/style.css" rel="stylesheet" />
+    <title>my-v1</title>
+  </head>
+  <body class="bg-[#F8F5F0]">
+    <div class="container mx-auto px-4 lg:px-[90px]">
+      <!-- header -->
+      <header
+        class="px-[20px] pt-[40px] pb-[20] flex items-center justify-between fixed w-screen left-0 top-0 bg-[#F8F5F0] z-[1111]"
+      >
+        <div class="">
+          <!-- logo -->
+          <div class="flex gap-2">
+            <img src="./src/assets/logo.png" alt="" />
+            <h1 class="roboto-uniquifier text-primary text-[24px] font-bold">
+              The Creater
+            </h1>
+          </div>
+        </div>
+        <!-- pages -->
+        <div
+          class="hidden lg:flex lg:gap-[20px] xl:gap-[35px] font-[500] leading-[24px] font_sfp xl:text-[20px] text-primary"
+        >
+          <a href="#features">Partners</a>
+          <a href="#work">How we Work</a>
+          <a href="#review">Review</a>
+          <a href="#charity">Charity</a>
+        </div>
+        <button
+          class="bg-secondary hidden lg:flex text-primary px-8 py-3 font-[600] text-[18px] leading-[24px] tracking-wide rounded-3xl"
+        >
+          Join The Creator
+        </button>
+        <!-- Hamburger Button -->
+        <button id="menu-btn" class="lg:hidden text-3xl">☰</button>
+      </header>
+
+      <!-- Mobile Menu -->
+      <nav
+        id="mobile-menu"
+        class="hidden font_sfp flex flex-col gap-4 px-6 pb-4 pt-[100px] lg:hidden fixed bg-[#F8F5F0] z-[1110] w-screen left-0"
+      >
+        <a href="#features" class="hover:text-pink-500">Partners</a>
+        <a href="#work" class="hover:text-pink-500">How we work</a>
+        <a href="#review" class="hover:text-pink-500">Review</a>
+        <a href="#charity" class="hover:text-pink-500">Charity</a>
+        <button class="bg-secondary text-white px-4 py-2 rounded-full">
+          Join The Creator
+        </button>
+      </nav>
+
+      <main>
+        <!-- landing -->
+        <section id="hero" class="pt-[150px] xl:pt-[100px]">
+          <div class="">
+            <!-- content -->
+            <div class="w-[130px] xl:w-full xl:flex absolute left-0">
+              <img class="absolute" src="./src/assets/hand1.png" alt="" />
+              <img class="hidden xl:flex" src="./src/assets/line2.png" alt="" />
+              <img
+                class="absolute top-[220px] left-[20px] xl:top-[300px] xl:left-[200px]"
+                src="./src/assets/lumb.png"
+                alt=""
+              />
+              <img
+                src="./src/assets/fb.png"
+                class="absolute xl:bottom-[40px] hidden xl:flex"
+                alt=""
+              />
+              <img
+                src="./src/assets/ins.png"
+                class="absolute top-[360px] left-[50px] hidden xl:flex"
+                alt=""
+              />
+            </div>
+            <div class="xl:py-[150px] py-[100px] xl:px-[50px]">
+              <div
+                class="text-primary font_sfp font-[700] text-[40px] xl:text-[112px] leading-[60px] xl:leading-[112px] flex flex-col items-center"
+              >
+                <h1>Spark your brand's</h1>
+                <h1 class="relative">
+                  <span
+                    >imaginative
+                    <img
+                      class="absolute top-[10px] left-[-10px] w-[220px] xl:w-fit xl:left-[-30px] z-[-1]"
+                      src="./src/assets/Line.png"
+                      alt=""
+                    />
+                  </span>
+                  flair
+                </h1>
+                <h1>with us</h1>
+              </div>
+              <p
+                class="xl:px-[200px] text-center py-[30px] text-[20px] leading-[30px]"
+              >
+                Our team combines strategy, design, and technology to breathe
+                life into your brand. Collaborate with us to leave a lasting
+                impression on your audience.
+              </p>
+
+              <!-- button -->
+              <div class="flex items-center justify-center bg-[#F8F5F0]">
+                <div
+                  class="flex items-center bg-white rounded-full shadow-sm p-1 xl:max-w-lg w-full"
+                >
+                  <input
+                    type="email"
+                    placeholder="Enter your Email"
+                    class="flex-1 px-5 py-3 rounded-full outline-none text-lg placeholder-gray-300"
+                  />
+                  <button
+                    class="bg-secondary hover:bg-pink-600 text-primary font-semibold px-8 py-3 rounded-full transition"
+                  >
+                    Join
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="absolute hidden xl:flex right-0 top-[300px]">
+              <img
+                class="absolute bottom-[-50px]"
+                src="./src/assets/hands2.png"
+                alt=""
+              />
+              <img src="./src/assets/line3.png" alt="" />
+              <img
+                class="absolute top-[100px] left-[-10px]"
+                src="./src/assets/lumb2.png"
+                alt=""
+              />
+              <img
+                src="./src/assets/yt.png"
+                class="absolute bottom-[40px]"
+                alt=""
+              />
+              <!-- <img src="./src/assets/ins.png" class=" absolute top-[360px] left-[50px]" alt=""> -->
+            </div>
+          </div>
+        </section>
+
+        <!-- feature -->
+        <section id="features" class="pt-16">
+          <div class="">
+            <img
+              class="absolute left-0 z-[-1] hidden xl:flex"
+              src="./src//assets/line5.png"
+              alt=""
+            />
+            <div
+              class="text-primary font_sfp font-[800] text-[25px] xl:text-[56px] flex flex-col justify-center items-center"
+            >
+              <h1>Contact us today to explore</h1>
+              <h1>
+                partnership
+                <span class="relative"
+                  >opportunities
+                  <img
+                    class="absolute left-0 xl:top-[50px] z-[-1]"
+                    src="./src//assets/line4.png"
+                    alt=""
+                /></span>
+                !
+              </h1>
+            </div>
+            <div
+              class="bg-white rounded-2xl xl:p-[30px] my-[50px] flex flex-col xl:flex-row gao-[30px] xl:gap-[70px]"
+            >
+              <div class="flex xl:pr-10 flex-col xl:w-1/2 xl:pl-10 pr-6">
+                <h1
+                  class="text-primary font_sfp font-[600] text-[24px] xl:text-[48px]"
+                >
+                  Partners:
+                </h1>
+                <span
+                  class="text-primary font_sfp font-[400] text-[16px] xl:text-[20px] xl:leading-[32px]"
+                  >Our creative agency forms strong partnerships with diverse
+                  businesses, from startups to global brands, based on trust,
+                  respect, and a shared vision for success.</span
+                >
+              </div>
+              <div class="pt-8 w-full md:w-1/2">
+                <!-- Container -->
+                <div
+                  class="flex flex-col md:flex-row md:overflow-x-auto no-scrollbar md:space-x-4 md:snap-x md:snap-mandatory scroll-smooth gap-4"
+                >
+                  <!-- CARD 1 -->
+                  <div
+                    class="w-full md:w-[400px] bg-[#FF60E6] p-[30px] rounded-2xl flex-shrink-0 md:snap-center"
+                  >
+                    <div class="flex justify-between w-full">
+                      <img src="./src/assets/tt.png" alt="" />
+                      <h1
+                        class="text-primary font_sfp font-[500] leading-[30px] text-[20px]"
+                      >
+                        2008 — Today
+                      </h1>
+                    </div>
+                    <p
+                      class="text-primary pt-5 font_sfp font-[400] leading-[24px] text-[16px]"
+                    >
+                      Provides communication between the agency and brands.
+                      Collects customer feedback and encourages discussion about
+                      the product, which helps improve it.
+                    </p>
+                  </div>
+
+                  <!-- CARD 2 -->
+                  <div
+                    class="w-full md:w-[400px] bg-[#FF60E6] p-[30px] rounded-2xl flex-shrink-0 md:snap-center"
+                  >
+                    <div class="flex justify-between w-full">
+                      <img src="./src/assets/tt.png" alt="" />
+                      <h1
+                        class="text-primary font_sfp font-[500] leading-[30px] text-[20px]"
+                      >
+                        2010 — Future
+                      </h1>
+                    </div>
+                    <p
+                      class="text-primary font_sfp pt-5 font-[400] leading-[24px] text-[16px]"
+                    >
+                      Provides communication between the agency and brands.
+                      Collects customer feedback and encourages discussion about
+                      the product, which helps improve it.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="work" class="pt-16">
+          <!-- work 1 -->
+          <div class="flex flex-col">
+            <div
+              class="text-primary font_sfp font-[900] text-[23px] xl:text-[56px] flex flex-col justify-center items-center"
+            >
+              <h1>Making it big on any Platform is</h1>
+              <h1>tougher than you think</h1>
+            </div>
+            <img src="./src/assets/w1.png" class="py-10" alt="" />
+          </div>
+          <!-- work 2 -->
+          <div class="flex flex-col py-10 gap-[30px]">
+            <div class="absolute left-0 hidden xl:flex">
+              <img src="./src/assets/line6.png" class="hidden xl:flex" alt="" />
+              <img
+                src="./src/assets/hands3.png"
+                class="absolute top-[-100px] hidden xl:flex"
+                alt=""
+              />
+              <img
+                src="./src/assets/p1.png"
+                class="absolute bottom-[200px] left-[200px]"
+                alt=""
+              />
+            </div>
+            <div
+              class="text-primary font_sfp font-[900] text-[23px] xl:text-[56px] flex flex-col justify-center items-center"
+            >
+              <h1>We do it for you. No more</h1>
+              <h1>truggling to grow on</h1>
+              <h1>any Platform</h1>
+            </div>
+            <p
+              class="xl:px-[250px] text-center text-primary font_sfp font-[700] text-[16px] xl:text-[32px]"
+            >
+              Work with our expert strategists writers, editors, and producers
+              to create content that transforms your content
+            </p>
+            <p
+              class="xl:px-[250px] text-center text-primary font_sfp font-[400] text-[14px] xl:text-[20px]"
+            >
+              No managing a team of freelancers or spending countless hours
+              trying to master all the skillsets Platform requires - all you
+              need is The Creator
+            </p>
+            <div class="absolute hidden xl:flex right-0">
+              <img src="./src/assets/line7.png" class="" alt="" />
+              <img
+                src="./src/assets/hands4.png"
+                class="absolute bottom-[-100px]"
+                alt=""
+              />
+              <img
+                src="./src/assets/p2.png"
+                class="absolute bottom-[250px] right-[200px]"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- work3 -->
+          <div class="pb-[50px] pt-[50px] xl:pt-[140px] flex flex-col gap-[100px]">
+            <!-- card1 -->
+            <div class="grid xl:grid-cols-2 grid-cols-1 xl:gap-[100px]">
+              <div class=" flex flex-col gap-[20px] items-start xl:pr-20">
+                <h1
+                  class="text-center text-primary font_sfp font-[700] text-[20px] xl:text-[40px]"
+                >
+                  # Research & Analysis
+                </h1>
+                <p class=" text-primary font_sfp font-[400] text-[15px] xl:text-[20px] leading-[22px] xl:leading-[32px]">
+                  Our agency's research-driven approach involves gathering
+                  insights into our clients' industries, competitors, and target
+                  audiences to develop tailored strategies that deliver
+                  exceptional results. This deep understanding allows us to
+                  create innovative and effective campaigns that resonate with
+                  our clients' audiences.
+                </p>
+              </div>
+              <img src="./src/assets/w2.png" alt="" />
+            </div>
+            <!-- card2 -->
+            <div class="grid xl:grid-cols-2 grid-cols-1 xl:gap-[100px]">
+              <div class=" xl:order-last flex flex-col gap-[20px] items-start xl:pr-20">
+                <h1
+                  class="text-center text-primary font_sfp font-[700] text-[20px] xl:text-[40px]"
+                >
+                  # Research & Analysis
+                </h1>
+                <p class=" text-primary font_sfp font-[400] text-[15px] xl:text-[20px] leading-[22px] xl:leading-[32px]">
+                  Our agency's research-driven approach involves gathering
+                  insights into our clients' industries, competitors, and target
+                  audiences to develop tailored strategies that deliver
+                  exceptional results. This deep understanding allows us to
+                  create innovative and effective campaigns that resonate with
+                  our clients' audiences.
+                </p>
+              </div>
+              <img src="./src/assets/w3.png" alt="" />
+            </div>
+            <!-- card3 -->
+            <div class="grid xl:grid-cols-2 grid-cols-1 xl:gap-[100px]">
+              <div class=" flex flex-col gap-[20px] items-start xl:pr-20">
+                <h1
+                  class="text-center text-primary font_sfp font-[700] text-[20px] xl:text-[40px]"
+                >
+                  # Research & Analysis
+                </h1>
+                <p class=" text-primary font_sfp font-[400] text-[15px] xl:text-[20px] leading-[22px] xl:leading-[32px]">
+                  Our agency's research-driven approach involves gathering
+                  insights into our clients' industries, competitors, and target
+                  audiences to develop tailored strategies that deliver
+                  exceptional results. This deep understanding allows us to
+                  create innovative and effective campaigns that resonate with
+                  our clients' audiences.
+                </p>
+              </div>
+              <img src="./src/assets/w4.png" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <section id="review" class="p-6 bg-gray-500 text-center h-screen">
+          <!-- footer -->
+        </section>
+      </main>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

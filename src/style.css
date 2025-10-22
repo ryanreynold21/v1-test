@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@import url("https://fonts.googleapis.com/css2?family=Kulim+Park:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --primary-color: #1f392c;
+  --secondary-color: #ff60e6;
+}
+
+.roboto_uniquifier {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+}
+
+@font-face {
+  font-family: "MyFont";
+  src: url("/fonts/SFProText-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font_sfp {
+  font-family: "MyFont", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth; /* 🔥 This gives smooth scrolling */
+}
+
+.text-primary {
+  color: var(--primary-color);
+}
+
+.bg-secondary {
+  background-color: var(--secondary-color);
+}
+
+/* hide scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
