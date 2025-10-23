@@ -70,3 +70,67 @@ menuLinks.forEach((link) => {
     mobileMenu.classList.add("hidden");
   });
 });
+
+// select all nav links from desktop and mobile navs
+const navLinks = document.querySelectorAll("#navbar-links a, #mobile-menu a");
+
+// helper: remove active from all links
+function clearActive() {
+  navLinks.forEach((l) => l.classList.remove("nav-active"));
+}
+
+// smooth scroll on click and set active
+navLinks.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    const href = link.getAttribute("href");
+    if (href && href.startsWith("#")) {
+      e.preventDefault(); // prevent default jump
+
+      // remove active from all, then add to clicked
+      clearActive();
+      link.classList.add("nav-active");
+
+      // scroll smoothly to target section
+      const target = document.querySelector(href);
+      if (target) {
+        target.scrollIntoView({ behavior: "smooth", block: "start" });
+
+        // update URL hash without jumping (optional)
+        history.replaceState(null, "", href);
+      }
+
+      // if mobile menu open, close it (if you have mobile menu logic)
+      const mobileMenu = document.getElementById("mobile-menu");
+      if (mobileMenu && !mobileMenu.classList.contains("hidden")) {
+        mobileMenu.classList.add("hidden");
+      }
+    }
+  });
+});
+
+// sections to observe
+const sections = document.querySelectorAll('main section[id]');
+
+// IntersectionObserver options
+const observerOptions = {
+  root: null,
+  rootMargin: '-20% 0px -60% 0px', // adjust so active switches near mid/top
+  threshold: 0
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const id = entry.target.getAttribute('id');
+      if (!id) return;
+      // remove active from all and set the one matching id
+      clearActive();
+      const activeLink = document.querySelector(`#navbar-links a[href="#${id}"], #mobile-menu a[href="#${id}"]`);
+      if (activeLink) activeLink.classList.add('nav-active');
+    }
+  });
+}, observerOptions);
+
+// observe each section
+sections.forEach(sec => observer.observe(sec));
+

@@ -58,3 +58,9 @@ html {
 .swiper-navigation-icon{
   display: none;
 }
+
+.nav-active {
+  color: #ff60e6;
+  font-weight: 800; /* bold */
+  font-size: 22px;
+}

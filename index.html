@@ -11,19 +11,20 @@
     <div class="container mx-auto px-4 lg:px-[90px]">
       <!-- header -->
       <header
-        class="px-[20px] pt-[40px] pb-[20] flex items-center justify-between fixed w-screen left-0 top-0 bg-[#F8F5F0] z-[1111]"
+        class=" pt-[40px] pb-[20] flex items-center justify-between px-3  fixed xl:px-[180px] right-0 left-0 top-0 bg-[#F8F5F0] z-[1111]"
       >
         <div class="">
           <!-- logo -->
-          <div class="flex gap-2">
+          <a href="#features" class="flex gap-2">
             <img src="./src/assets/logo.png" alt="" />
             <h1 class="roboto-uniquifier text-primary text-[24px] font-bold">
               The Creater
             </h1>
-          </div>
+          </a>
         </div>
         <!-- pages -->
         <div
+          id="navbar-links"
           class="hidden lg:flex lg:gap-[20px] xl:gap-[35px] font-[500] leading-[24px] font_sfp xl:text-[20px] text-primary"
         >
           <a href="#features">Partners</a>
@@ -31,6 +32,7 @@
           <a href="#review">Review</a>
           <a href="#charity">Charity</a>
         </div>
+
         <button
           class="bg-secondary hidden lg:flex text-primary px-8 py-3 font-[600] text-[18px] leading-[24px] tracking-wide rounded-3xl"
         >
@@ -80,7 +82,7 @@
             </div>
             <div class="xl:py-[150px] py-[100px] xl:px-[50px]">
               <div
-                class="text-primary font_sfp font-[700] text-[40px] xl:text-[112px] leading-[60px] xl:leading-[112px] flex flex-col items-center"
+                class="text-primary font_sfp font-[700] text-[34px] xl:text-[112px] leading-[60px] xl:leading-[112px] flex flex-col items-center"
               >
                 <h1>Spark your brand's</h1>
                 <h1 class="relative">
@@ -153,7 +155,7 @@
               alt=""
             />
             <div
-              class="text-primary font_sfp font-[800] text-[25px] xl:text-[56px] flex flex-col justify-center items-center"
+              class="text-primary font_sfp_bold font-[800] text-[25px] xl:text-[56px] flex flex-col justify-center items-center"
             >
               <h1>Contact us today to explore</h1>
               <h1>
@@ -240,7 +242,7 @@
           <!-- work 1 -->
           <div class="flex flex-col">
             <div
-              class="text-primary font_sfp font-[900] text-[23px] xl:text-[56px] flex flex-col justify-center items-center"
+              class="text-primary font_sfp_bold font-[900] text-[23px] xl:text-[56px] flex flex-col justify-center items-center"
             >
               <h1>Making it big on any Platform is</h1>
               <h1>tougher than you think</h1>
@@ -263,14 +265,14 @@
               />
             </div>
             <div
-              class="text-primary font_sfp font-[900] text-[23px] xl:text-[56px] flex flex-col justify-center items-center"
+              class="text-primary font_sfp_bold font-[900] text-[23px] xl:text-[56px] flex flex-col justify-center items-center"
             >
               <h1>We do it for you. No more</h1>
               <h1>truggling to grow on</h1>
               <h1>any Platform</h1>
             </div>
             <p
-              class="xl:px-[250px] text-center text-primary font_sfp font-[700] text-[16px] xl:text-[32px]"
+              class="xl:px-[250px] text-center text-primary font_sfp_bold font-[700] text-[16px] xl:text-[32px]"
             >
               Work with our expert strategists writers, editors, and producers
               to create content that transforms your content
@@ -304,7 +306,7 @@
             <div class="grid xl:grid-cols-2 grid-cols-1 xl:gap-[100px]">
               <div class="flex flex-col gap-[20px] items-start xl:pr-20">
                 <h1
-                  class="text-center text-primary font_sfp font-[700] text-[20px] xl:text-[40px]"
+                  class="text-center text-primary font_sfp_bold font-[700] text-[20px] xl:text-[40px]"
                 >
                   # Research & Analysis
                 </h1>
@@ -327,7 +329,7 @@
                 class="xl:order-last flex flex-col gap-[20px] items-start xl:pr-20"
               >
                 <h1
-                  class="text-center text-primary font_sfp font-[700] text-[20px] xl:text-[40px]"
+                  class="text-center text-primary font_sfp_bold font-[700] text-[20px] xl:text-[40px]"
                 >
                   # Research & Analysis
                 </h1>
@@ -348,7 +350,7 @@
             <div class="grid xl:grid-cols-2 grid-cols-1 xl:gap-[100px]">
               <div class="flex flex-col gap-[20px] items-start xl:pr-20">
                 <h1
-                  class="text-center text-primary font_sfp font-[700] text-[20px] xl:text-[40px]"
+                  class="text-center text-primary font_sfp_bold font-[700] text-[20px] xl:text-[40px]"
                 >
                   # Research & Analysis
                 </h1>
@@ -513,7 +515,7 @@
             </div>
           </div>
           <!-- contact -->
-          <div class=" flex flex-col xl:flex-row justify-between gap-6">
+          <div class="flex flex-col xl:flex-row justify-between gap-6">
             <p
               class="text-primary font_sfp font-[400] text-[16px] xl:text-[20px] leading-[32px]"
             >
@@ -521,14 +523,14 @@
             </p>
             <!-- pages -->
             <div
-              class=" flex xl:flex-row flex-col gap-[10px] lg:gap-[20px] xl:gap-[35px] font-[500] leading-[24px] font_sfp xl:text-[20px] text-primary"
+              class="flex xl:flex-row flex-col gap-[10px] lg:gap-[20px] xl:gap-[35px] font-[500] leading-[24px] font_sfp xl:text-[20px] text-primary"
             >
               <a href="#features">Partners</a>
               <a href="#work">How we Work</a>
               <a href="#review">Review</a>
               <a href="#charity">Charity</a>
             </div>
-            <img class=" w-[100px] xl:w-fit" src="./src/assets/ct.png" alt="">
+            <img class="w-[100px] xl:w-fit" src="./src/assets/ct.png" alt="" />
           </div>
         </footer>
       </main>
